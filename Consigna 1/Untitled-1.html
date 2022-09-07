@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+            <title>Consigna 01</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Titulo 01</h1>
+            <p>Los beneficios se aplicarán en las facturas de los usuarios que consuman menos de 400 kWh por mes en el caso de la electricidad y 175 metros cúbicos de gas por año. Lo que hay que saber para evitar cruzar el límite y pagar el precio completo</p>
+            <img wedth="10" src="luz.webp" alt="Factura de luz">
+            
+        <h2>Titulo 02</h2>
+            
+            <p>Las medidas anunciadas coinciden con la visión de los mercados, aunque aún restan conocer muchos detalles. <br> El nuevo aumento de tarifas según nivel de consumo es la primera medida concreta de recorte de gasto</p>
+            <p>Ejemplo de lsita de medidas</p>
+                <ul>
+                    <li>item01</li>
+                    <p>texto de prueba</p>
+                    <li>item02</li>
+                    <li>item03</li>
+                </ul>
+            <p>y los pasos a seguir de prueba son</p>
+                <ol>
+                    <li>paso 01</li>
+                    <li>paso 02</li>
+                    <li>paso 03</li>
+                </ol>
+        <h3>Tabla</h3>
+        <table>
+            <thead>
+                
+            </thead>
+        </table>
+        <h4>Formulario</h4>
+                <form action="">
+                    <!-- action va a tener la data de a donde va a enviar el formulario (URL)-->
+                    <!-- Para agregar campos para completar con texto -->
+                    <!-- label seria el datoa pedir -->
+                    <label for="">Nombre</label>
+                    <!-- input configura que tipo de dato voy a poder ingresar, en este caso texto -->
+                    <input type="text">
+                    <label for="">Apellido</label>
+                    <input name="apellido" type="text">
+                    <label for="">Edad</label>
+                    <!-- aca voy a configurar para que de error si manda como dato de edad mas de 99 años: -->
+                    <input type="number" min="1" max="99"> 
+                    <label for="">Email</label>
+                    <!-- Aca voy a agregar placeholder que permite poner info para orientar al y sea tipo jemplo -->
+                    <input name="correo" type="email" placeholder="usuario@dominio.com">
+                    <!-- Para hacer un menu para elegir -->
+                    <select>
+                        <optgroup label="America">America</optgroup>
+                            <option value="">Paraguay</option>
+                            <option value="">Uruguay</option>
+                        <optgroup label="Europa">Europa</optgroup>
+                            <option value="">Italia</option>
+                            <option value="">España</option>
+                            
+                        <!-- el value es para identificar de forma interna que va a ir -->
+                        <!-- el optgroup es para agrupar variables -->
+                    </select>
+                    <label for="">Consulta</label>
+                    <textarea name="consulta"></textarea>
+                    <!-- Para generar el boton enviar -->
+                    <input type="submit" value="Enviar">
+                    <!-- Para hacer el boton correctamente -->
+                    <button type="submit">Mandar</button>
+                    </button>
+                </form>
+                 <!-- voy a hacer una para pagos y que no viaje en la url-->
+                <form action="http://hostname:8080" method="POST">
+                    <input name="nombre" type="text" placeholder="Nombre">
+                    <input name="apellido" type="text" placeholder="Apellido"> 
+                    <input name="n tarjeta" type="number" placeholder="Tarjeta N">           
+                    <input name="vencimiento mes" type="number" placeholder="Mes Vencimiento">
+                    <input name="vencimiento año" type="number" placeholder="Año Vencimiento">
+                    <!-- oy a configurar para que aparezcan * al completar -->
+                    <input name="frase de seguridad" type="password" placeholder="frase de seguidad">
+                    <!-- voy a obligar al usuario a completar este campo -->                
+                    <input name="casillaregistrada" required type="password" placeholder="casilla registrada">
+                    <label for="">Fecha</label>
+                    <input type="date">
+                    <label for="">Fecha y hora</label>
+                    <input type="time">                    
+                    <button type="submit">Mandar</button>
+                </form>
+                <h5>Login</h5>
+                <form action="http://dominio.com/" method="POST">
+                <label for="">Email</label>
+                <input name="correo" type="email" placeholder="usuario@dominio.com">
+                <label for="">Clave</label>
+                <input name="clave" required type="password" placeholder="Clave">
+                <label for="">Acepta ingresar</label>
+                <input type="checkbox">
+                <button type="submit">Entrar</button>
+                </form>
+                <div>
+                <p> Ejemplo de iframe:</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UYYEpkOelV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        
+    </body>
